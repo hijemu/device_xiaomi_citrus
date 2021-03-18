@@ -71,6 +71,20 @@ PRODUCT_PACKAGES += \
     XiaomiBluetooth \
     XiaomiFrameworks
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@5.0-impl \
+    android.hardware.audio.effect@5.0-impl \
+    android.hardware.audio.service \
+    android.hardware.soundtrigger@2.2-impl \
+    audio.a2dp.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    libaudio-resampler \
+    libaudioroute \
+    libtinycompress \
+    libvolumelistener
+    
 # Permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
