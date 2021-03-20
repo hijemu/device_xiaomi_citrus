@@ -59,9 +59,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Snap
 
-# Copy fstab to ramdisk
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom    
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom  
     
 # fastbootd
 PRODUCT_PACKAGES += \
