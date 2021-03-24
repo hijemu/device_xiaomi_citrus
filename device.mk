@@ -63,9 +63,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_citrus
 
 # Overlays
-PRODUCT_PACKAGES += \
-    XiaomiBluetooth \
-    XiaomiFrameworks
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
 
 # Audio
 PRODUCT_PACKAGES += \
