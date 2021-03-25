@@ -52,7 +52,7 @@ PRODUCT_PACKAGES += \
 
 # Copy fstab to ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom    
+    $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_RAMDISK)/fstab.default    
     
 # fastbootd
 PRODUCT_PACKAGES += \
