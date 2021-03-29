@@ -46,7 +46,11 @@ PRODUCT_PACKAGES += \
 # Copy fstab to ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_RAMDISK)/fstab.default    
-    
+
+# init script
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc
+        
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
