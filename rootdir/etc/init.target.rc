@@ -85,7 +85,6 @@ on post-fs-data
     chmod 0777 /vendor/bin/scancode_bin
 
 on early-boot
-    start vendor.sensors
 
 on boot
 # wuzhisen change Define cpu set for audio app. This is to optimize
